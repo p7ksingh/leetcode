@@ -1,0 +1,15 @@
+//Print largest number in array
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1,5,2,7,11,0};
+        int largest=Integer.MIN_VALUE;
+        for(int arr1 : arr){
+            if(arr1 > largest){
+                largest = arr1;
+            }
+        }
+         System.out.println(largest);
+    }
+}
