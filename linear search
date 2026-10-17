@@ -1,0 +1,18 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+class Main {
+    public static int find(int target, int[] arr){
+        for(int i=0; i< arr.length; i++){
+            if(target == arr[i]){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+    int[] arr = {1,2,34,4,5,6,3};
+    int target= 3;
+        int result = find(target, arr);
+        System.out.println(result);
+    }
+}
