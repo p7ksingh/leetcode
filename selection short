@@ -1,0 +1,26 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {3,1,45,12,11,9,7};
+       for(int i=0; i<arr.length-1;i++){
+           int minIndex=i;
+           int minValue=arr[i];
+           for(int j=i+1;j<arr.length;j++){
+               if(arr[j]<minValue){
+                   minIndex=j;
+                   minValue=arr[j];
+               }}
+               if(minIndex !=i){
+                   arr[minIndex] = arr[i];
+                    arr[i] = minValue;
+               }
+           
+       }
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i] +" ");
+        }
+        
+   }
+}
